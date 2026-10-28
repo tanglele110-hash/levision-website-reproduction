@@ -1,0 +1,85 @@
+{
+  "inputMode": "replace: public_url | owned_source | licensed_source | evidence_pack",
+  "implementationMode": "replace: source_localization | evidence_reimplementation",
+  "source": "replace with authorized input",
+  "sourceProvenance": {
+    "revision": null,
+    "licenseEvidence": [],
+    "deployedFileComparisons": [],
+    "localChanges": [],
+    "dependencyVersions": {}
+  },
+  "pages": [],
+  "journeys": [],
+  "requiredStates": [],
+  "excluded": [],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "dpr": 1,
+      "input": [
+        "mouse",
+        "keyboard"
+      ]
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ]
+    },
+    {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ]
+    }
+  ],
+  "motionPreferences": [
+    "no-preference",
+    "reduce"
+  ],
+  "readinessConditions": [],
+  "responsiveConditions": [],
+  "breakpointProbes": [],
+  "dynamicComparison": {
+    "applicable": null,
+    "randomness": null,
+    "clockAndPhase": null,
+    "testInstrumentation": null,
+    "frameEquivalence": "unverified unless assessed"
+  },
+  "tolerances": {
+    "geometryCssPx": null,
+    "imageMetric": null,
+    "motion": null
+  },
+  "captureBudget": {
+    "pages": null,
+    "requests": null,
+    "perAssetBytes": null,
+    "totalBytes": null,
+    "elapsedSeconds": null
+  },
+  "outputDirectory": "replace with isolated target",
+  "runtime": "follow target project contract",
+  "schemaVersion": 1,
+  "requirements": [
+    {
+      "id": "replace-with-required-check",
+      "description": "Replace with actual mapped requirements before assessment. Missing evidence remains unverified.",
+      "required": true,
+      "kind": "manual"
+    }
+  ]
+}

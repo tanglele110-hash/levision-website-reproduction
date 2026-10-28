@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "name": "Orbital study",
+  "implementationMode": "authored_regression_pair",
+  "requirements": [
+    {
+      "id": "desktop-running-runtime",
+      "kind": "runtime",
+      "case": "desktop-running",
+      "required": true
+    },
+    {
+      "id": "desktop-running-moving",
+      "kind": "probe",
+      "case": "desktop-running",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "desktop-paused-runtime",
+      "kind": "runtime",
+      "case": "desktop-paused",
+      "required": true
+    },
+    {
+      "id": "desktop-paused-moving",
+      "kind": "probe",
+      "case": "desktop-paused",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "desktop-resumed-runtime",
+      "kind": "runtime",
+      "case": "desktop-resumed",
+      "required": true
+    },
+    {
+      "id": "desktop-resumed-moving",
+      "kind": "probe",
+      "case": "desktop-resumed",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "desktop-reset-runtime",
+      "kind": "runtime",
+      "case": "desktop-reset",
+      "required": true
+    },
+    {
+      "id": "desktop-reset-visual",
+      "kind": "visual",
+      "case": "desktop-reset",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-reset-moving",
+      "kind": "probe",
+      "case": "desktop-reset",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "desktop-reduce-runtime",
+      "kind": "runtime",
+      "case": "desktop-reduce",
+      "required": true
+    },
+    {
+      "id": "desktop-reduce-visual",
+      "kind": "visual",
+      "case": "desktop-reduce",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-reduce-moving",
+      "kind": "probe",
+      "case": "desktop-reduce",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "tablet-running-runtime",
+      "kind": "runtime",
+      "case": "tablet-running",
+      "required": true
+    },
+    {
+      "id": "tablet-running-moving",
+      "kind": "probe",
+      "case": "tablet-running",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "tablet-paused-runtime",
+      "kind": "runtime",
+      "case": "tablet-paused",
+      "required": true
+    },
+    {
+      "id": "tablet-paused-moving",
+      "kind": "probe",
+      "case": "tablet-paused",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "tablet-resumed-runtime",
+      "kind": "runtime",
+      "case": "tablet-resumed",
+      "required": true
+    },
+    {
+      "id": "tablet-resumed-moving",
+      "kind": "probe",
+      "case": "tablet-resumed",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "tablet-reset-runtime",
+      "kind": "runtime",
+      "case": "tablet-reset",
+      "required": true
+    },
+    {
+      "id": "tablet-reset-visual",
+      "kind": "visual",
+      "case": "tablet-reset",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-reset-moving",
+      "kind": "probe",
+      "case": "tablet-reset",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "tablet-reduce-runtime",
+      "kind": "runtime",
+      "case": "tablet-reduce",
+      "required": true
+    },
+    {
+      "id": "tablet-reduce-visual",
+      "kind": "visual",
+      "case": "tablet-reduce",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-reduce-moving",
+      "kind": "probe",
+      "case": "tablet-reduce",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "phone-running-runtime",
+      "kind": "runtime",
+      "case": "phone-running",
+      "required": true
+    },
+    {
+      "id": "phone-running-moving",
+      "kind": "probe",
+      "case": "phone-running",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "phone-paused-runtime",
+      "kind": "runtime",
+      "case": "phone-paused",
+      "required": true
+    },
+    {
+      "id": "phone-paused-moving",
+      "kind": "probe",
+      "case": "phone-paused",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "phone-resumed-runtime",
+      "kind": "runtime",
+      "case": "phone-resumed",
+      "required": true
+    },
+    {
+      "id": "phone-resumed-moving",
+      "kind": "probe",
+      "case": "phone-resumed",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "phone-reset-runtime",
+      "kind": "runtime",
+      "case": "phone-reset",
+      "required": true
+    },
+    {
+      "id": "phone-reset-visual",
+      "kind": "visual",
+      "case": "phone-reset",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-reset-moving",
+      "kind": "probe",
+      "case": "phone-reset",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "phone-reduce-runtime",
+      "kind": "runtime",
+      "case": "phone-reduce",
+      "required": true
+    },
+    {
+      "id": "phone-reduce-visual",
+      "kind": "visual",
+      "case": "phone-reduce",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-reduce-moving",
+      "kind": "probe",
+      "case": "phone-reduce",
+      "probe": "moving",
+      "required": true,
+      "referenceExpected": false
+    }
+  ],
+  "excluded": [
+    "Independent blind-agent reconstruction",
+    "Real mobile hardware",
+    "Backend and authentication",
+    "Unaligned dynamic frame equivalence"
+  ]
+}

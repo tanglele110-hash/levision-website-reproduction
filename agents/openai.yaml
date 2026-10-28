@@ -1,0 +1,4 @@
+interface:
+  display_name: "网站复刻 · Website Reproduction"
+  short_description: "从网站证据到可运行工程，核验响应式、交互、动效与真实素材"
+  default_prompt: "Use $website-reproduction to reproduce the agreed website scope, deliver a runnable local project, and verify visual and interaction fidelity."

@@ -1,0 +1,4 @@
+# Optional helper dependencies; tested with Python 3.14 on Windows.
+# Python 3.11+ is required by scripts/validate_pack.py.
+PyYAML==6.0.3
+Pillow==12.1.1

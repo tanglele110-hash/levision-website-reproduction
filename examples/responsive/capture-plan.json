@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "url": "REPLACE_WITH_EXPLICIT_EXAMPLE_ORIGIN",
+  "assetLicense": "MIT; original example by 木渡川（Tanglele）",
+  "budget": {
+    "max_requests": 160,
+    "seconds": 150
+  },
+  "cases": [
+    {
+      "id": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "touch": false
+      },
+      "motion": "no-preference",
+      "ready": "h1",
+      "actions": [],
+      "probes": [
+        {
+          "id": "heading",
+          "kind": "text",
+          "selector": "h1"
+        },
+        {
+          "id": "grid",
+          "kind": "geometry",
+          "selector": ".grid"
+        },
+        {
+          "id": "image",
+          "kind": "imageLoaded",
+          "selector": "img"
+        }
+      ]
+    },
+    {
+      "id": "tablet",
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "dpr": 1,
+        "touch": true
+      },
+      "motion": "no-preference",
+      "ready": "h1",
+      "actions": [],
+      "probes": [
+        {
+          "id": "heading",
+          "kind": "text",
+          "selector": "h1"
+        },
+        {
+          "id": "grid",
+          "kind": "geometry",
+          "selector": ".grid"
+        },
+        {
+          "id": "image",
+          "kind": "imageLoaded",
+          "selector": "img"
+        }
+      ]
+    },
+    {
+      "id": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "touch": true
+      },
+      "motion": "no-preference",
+      "ready": "h1",
+      "actions": [],
+      "probes": [
+        {
+          "id": "heading",
+          "kind": "text",
+          "selector": "h1"
+        },
+        {
+          "id": "grid",
+          "kind": "geometry",
+          "selector": ".grid"
+        },
+        {
+          "id": "image",
+          "kind": "imageLoaded",
+          "selector": "img"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "url": "https://example.org/",
+  "assetLicense": "unverified; replace with actual evidence",
+  "budget": {"max_requests": 120, "per_resource_bytes": 4194304, "total_bytes": 25165824, "seconds": 90},
+  "cases": [
+    {"id": "desktop", "viewport": {"width": 1440, "height": 1000, "dpr": 1, "touch": false}, "motion": "no-preference", "ready": "h1", "actions": [], "probes": [{"id": "heading", "kind": "text", "selector": "h1"}]},
+    {"id": "tablet", "viewport": {"width": 768, "height": 1024, "dpr": 1, "touch": true}, "motion": "no-preference", "ready": "h1", "actions": [], "probes": [{"id": "heading", "kind": "text", "selector": "h1"}]},
+    {"id": "phone", "viewport": {"width": 390, "height": 844, "dpr": 1, "touch": true}, "motion": "no-preference", "ready": "h1", "actions": [], "probes": [{"id": "heading", "kind": "text", "selector": "h1"}]}
+  ]
+}

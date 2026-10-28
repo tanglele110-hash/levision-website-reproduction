@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "name": "Reading room",
+  "implementationMode": "authored_regression_pair",
+  "requirements": [
+    {
+      "id": "desktop-default-runtime",
+      "kind": "runtime",
+      "case": "desktop-default",
+      "required": true
+    },
+    {
+      "id": "desktop-default-visual",
+      "kind": "visual",
+      "case": "desktop-default",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-default-menu",
+      "kind": "probe",
+      "case": "desktop-default",
+      "probe": "menu",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "desktop-menu-runtime",
+      "kind": "runtime",
+      "case": "desktop-menu",
+      "required": true
+    },
+    {
+      "id": "desktop-menu-visual",
+      "kind": "visual",
+      "case": "desktop-menu",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-menu-menu",
+      "kind": "probe",
+      "case": "desktop-menu",
+      "probe": "menu",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "desktop-tabs-runtime",
+      "kind": "runtime",
+      "case": "desktop-tabs",
+      "required": true
+    },
+    {
+      "id": "desktop-tabs-visual",
+      "kind": "visual",
+      "case": "desktop-tabs",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-tabs-collection",
+      "kind": "probe",
+      "case": "desktop-tabs",
+      "probe": "collection",
+      "required": true,
+      "referenceExpected": "Essays collection"
+    },
+    {
+      "id": "desktop-empty-runtime",
+      "kind": "runtime",
+      "case": "desktop-empty",
+      "required": true
+    },
+    {
+      "id": "desktop-empty-visual",
+      "kind": "visual",
+      "case": "desktop-empty",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-empty-results",
+      "kind": "probe",
+      "case": "desktop-empty",
+      "probe": "results",
+      "required": true,
+      "referenceExpected": "No matching titles"
+    },
+    {
+      "id": "desktop-details-runtime",
+      "kind": "runtime",
+      "case": "desktop-details",
+      "required": true
+    },
+    {
+      "id": "desktop-details-visual",
+      "kind": "visual",
+      "case": "desktop-details",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-details-details",
+      "kind": "probe",
+      "case": "desktop-details",
+      "probe": "details",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "desktop-dialog-runtime",
+      "kind": "runtime",
+      "case": "desktop-dialog",
+      "required": true
+    },
+    {
+      "id": "desktop-dialog-visual",
+      "kind": "visual",
+      "case": "desktop-dialog",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-dialog-dialog",
+      "kind": "probe",
+      "case": "desktop-dialog",
+      "probe": "dialog",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "desktop-return-runtime",
+      "kind": "runtime",
+      "case": "desktop-return",
+      "required": true
+    },
+    {
+      "id": "desktop-return-visual",
+      "kind": "visual",
+      "case": "desktop-return",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-return-dialog",
+      "kind": "probe",
+      "case": "desktop-return",
+      "probe": "dialog",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "desktop-return-focus",
+      "kind": "probe",
+      "case": "desktop-return",
+      "probe": "focus",
+      "required": true,
+      "referenceExpected": 1
+    },
+    {
+      "id": "tablet-default-runtime",
+      "kind": "runtime",
+      "case": "tablet-default",
+      "required": true
+    },
+    {
+      "id": "tablet-default-visual",
+      "kind": "visual",
+      "case": "tablet-default",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-default-menu",
+      "kind": "probe",
+      "case": "tablet-default",
+      "probe": "menu",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "tablet-menu-runtime",
+      "kind": "runtime",
+      "case": "tablet-menu",
+      "required": true
+    },
+    {
+      "id": "tablet-menu-visual",
+      "kind": "visual",
+      "case": "tablet-menu",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-menu-menu",
+      "kind": "probe",
+      "case": "tablet-menu",
+      "probe": "menu",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "tablet-tabs-runtime",
+      "kind": "runtime",
+      "case": "tablet-tabs",
+      "required": true
+    },
+    {
+      "id": "tablet-tabs-visual",
+      "kind": "visual",
+      "case": "tablet-tabs",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-tabs-collection",
+      "kind": "probe",
+      "case": "tablet-tabs",
+      "probe": "collection",
+      "required": true,
+      "referenceExpected": "Essays collection"
+    },
+    {
+      "id": "tablet-empty-runtime",
+      "kind": "runtime",
+      "case": "tablet-empty",
+      "required": true
+    },
+    {
+      "id": "tablet-empty-visual",
+      "kind": "visual",
+      "case": "tablet-empty",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-empty-results",
+      "kind": "probe",
+      "case": "tablet-empty",
+      "probe": "results",
+      "required": true,
+      "referenceExpected": "No matching titles"
+    },
+    {
+      "id": "tablet-details-runtime",
+      "kind": "runtime",
+      "case": "tablet-details",
+      "required": true
+    },
+    {
+      "id": "tablet-details-visual",
+      "kind": "visual",
+      "case": "tablet-details",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-details-details",
+      "kind": "probe",
+      "case": "tablet-details",
+      "probe": "details",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "tablet-dialog-runtime",
+      "kind": "runtime",
+      "case": "tablet-dialog",
+      "required": true
+    },
+    {
+      "id": "tablet-dialog-visual",
+      "kind": "visual",
+      "case": "tablet-dialog",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-dialog-dialog",
+      "kind": "probe",
+      "case": "tablet-dialog",
+      "probe": "dialog",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "tablet-return-runtime",
+      "kind": "runtime",
+      "case": "tablet-return",
+      "required": true
+    },
+    {
+      "id": "tablet-return-visual",
+      "kind": "visual",
+      "case": "tablet-return",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-return-dialog",
+      "kind": "probe",
+      "case": "tablet-return",
+      "probe": "dialog",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "tablet-return-focus",
+      "kind": "probe",
+      "case": "tablet-return",
+      "probe": "focus",
+      "required": true,
+      "referenceExpected": 1
+    },
+    {
+      "id": "phone-default-runtime",
+      "kind": "runtime",
+      "case": "phone-default",
+      "required": true
+    },
+    {
+      "id": "phone-default-visual",
+      "kind": "visual",
+      "case": "phone-default",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-default-menu",
+      "kind": "probe",
+      "case": "phone-default",
+      "probe": "menu",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "phone-menu-runtime",
+      "kind": "runtime",
+      "case": "phone-menu",
+      "required": true
+    },
+    {
+      "id": "phone-menu-visual",
+      "kind": "visual",
+      "case": "phone-menu",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-menu-menu",
+      "kind": "probe",
+      "case": "phone-menu",
+      "probe": "menu",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "phone-tabs-runtime",
+      "kind": "runtime",
+      "case": "phone-tabs",
+      "required": true
+    },
+    {
+      "id": "phone-tabs-visual",
+      "kind": "visual",
+      "case": "phone-tabs",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-tabs-collection",
+      "kind": "probe",
+      "case": "phone-tabs",
+      "probe": "collection",
+      "required": true,
+      "referenceExpected": "Essays collection"
+    },
+    {
+      "id": "phone-empty-runtime",
+      "kind": "runtime",
+      "case": "phone-empty",
+      "required": true
+    },
+    {
+      "id": "phone-empty-visual",
+      "kind": "visual",
+      "case": "phone-empty",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-empty-results",
+      "kind": "probe",
+      "case": "phone-empty",
+      "probe": "results",
+      "required": true,
+      "referenceExpected": "No matching titles"
+    },
+    {
+      "id": "phone-details-runtime",
+      "kind": "runtime",
+      "case": "phone-details",
+      "required": true
+    },
+    {
+      "id": "phone-details-visual",
+      "kind": "visual",
+      "case": "phone-details",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-details-details",
+      "kind": "probe",
+      "case": "phone-details",
+      "probe": "details",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "phone-dialog-runtime",
+      "kind": "runtime",
+      "case": "phone-dialog",
+      "required": true
+    },
+    {
+      "id": "phone-dialog-visual",
+      "kind": "visual",
+      "case": "phone-dialog",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-dialog-dialog",
+      "kind": "probe",
+      "case": "phone-dialog",
+      "probe": "dialog",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "phone-return-runtime",
+      "kind": "runtime",
+      "case": "phone-return",
+      "required": true
+    },
+    {
+      "id": "phone-return-visual",
+      "kind": "visual",
+      "case": "phone-return",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-return-dialog",
+      "kind": "probe",
+      "case": "phone-return",
+      "probe": "dialog",
+      "required": true,
+      "referenceExpected": false
+    },
+    {
+      "id": "phone-return-focus",
+      "kind": "probe",
+      "case": "phone-return",
+      "probe": "focus",
+      "required": true,
+      "referenceExpected": 1
+    }
+  ],
+  "excluded": [
+    "Independent blind-agent reconstruction",
+    "Real mobile hardware",
+    "Backend and authentication",
+    "Unaligned dynamic frame equivalence"
+  ]
+}

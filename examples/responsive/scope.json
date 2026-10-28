@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "name": "Field notes",
+  "implementationMode": "authored_regression_pair",
+  "requirements": [
+    {
+      "id": "desktop-runtime",
+      "kind": "runtime",
+      "case": "desktop",
+      "required": true
+    },
+    {
+      "id": "desktop-visual",
+      "kind": "visual",
+      "case": "desktop",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "desktop-heading",
+      "kind": "probe",
+      "case": "desktop",
+      "probe": "heading",
+      "required": true
+    },
+    {
+      "id": "desktop-grid",
+      "kind": "probe",
+      "case": "desktop",
+      "probe": "grid",
+      "required": true
+    },
+    {
+      "id": "desktop-image",
+      "kind": "probe",
+      "case": "desktop",
+      "probe": "image",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "tablet-runtime",
+      "kind": "runtime",
+      "case": "tablet",
+      "required": true
+    },
+    {
+      "id": "tablet-visual",
+      "kind": "visual",
+      "case": "tablet",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "tablet-heading",
+      "kind": "probe",
+      "case": "tablet",
+      "probe": "heading",
+      "required": true
+    },
+    {
+      "id": "tablet-grid",
+      "kind": "probe",
+      "case": "tablet",
+      "probe": "grid",
+      "required": true
+    },
+    {
+      "id": "tablet-image",
+      "kind": "probe",
+      "case": "tablet",
+      "probe": "image",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "phone-runtime",
+      "kind": "runtime",
+      "case": "phone",
+      "required": true
+    },
+    {
+      "id": "phone-visual",
+      "kind": "visual",
+      "case": "phone",
+      "maxDifferentPixelRatio": 0,
+      "required": true
+    },
+    {
+      "id": "phone-heading",
+      "kind": "probe",
+      "case": "phone",
+      "probe": "heading",
+      "required": true
+    },
+    {
+      "id": "phone-grid",
+      "kind": "probe",
+      "case": "phone",
+      "probe": "grid",
+      "required": true
+    },
+    {
+      "id": "phone-image",
+      "kind": "probe",
+      "case": "phone",
+      "probe": "image",
+      "required": true,
+      "referenceExpected": true
+    },
+    {
+      "id": "real-asset",
+      "kind": "asset",
+      "case": "desktop",
+      "sourceSuffix": "/swatches.svg",
+      "required": true
+    }
+  ],
+  "excluded": [
+    "Independent blind-agent reconstruction",
+    "Real mobile hardware",
+    "Backend and authentication",
+    "Unaligned dynamic frame equivalence"
+  ]
+}
